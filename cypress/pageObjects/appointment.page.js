@@ -87,6 +87,24 @@ class AppointmentPage {
     static get confComment() {
         return cy.get("p#comment");
     }
+
+    static get menuBtn() {
+        return cy.get("a#menu-toggle");
+    }
+
+    static get menu() {
+        return cy.get("nav#sidebar-wrapper");
+    }
+
+    static get historyBtn() {
+        return cy.get('a[href="history.php#history"]');
+    }
+
+    static get historyView() {
+        return cy.get('section#history');
+    }
+
+
 }
 
 export default AppointmentPage

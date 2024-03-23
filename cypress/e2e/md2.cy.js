@@ -39,5 +39,23 @@ describe('CURA Healthcare', () => {
             AppointmentPage.confDate.should("contain",date);
             AppointmentPage.confComment.should("have.text",comment);
         });
+
+        it("Check appointment history", () => {
+            AppointmentPage.makeButton.click();
+            AppointmentPage.demoUsername().then(username => {
+                AppointmentPage.usernameField.type(username);
+            });
+            AppointmentPage.demoPassword().then(password =>{
+                AppointmentPage.passwordField.type(password);
+            });
+            AppointmentPage.loginButton.click();
+            AppointmentPage.loginErr.should('not.exist');
+            AppointmentPage.menuBtn.click();
+            AppointmentPage.menu.should("have.class", "active");
+            AppointmentPage.historyBtn.click();
+            AppointmentPage.historyView.should('exist');
+            AppointmentPage.historyView.should('have.descendants','p').contains('p', 'No appointment.');
+
+        })
     })
 })
