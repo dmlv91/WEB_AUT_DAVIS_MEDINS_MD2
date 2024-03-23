@@ -1,0 +1,22 @@
+{
+  "name": "web_aut_davis_medins_md2",
+  "version": "1.0.0",
+  "description": "QA Automation course MD2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmlv91/WEB_AUT_DAVIS_MEDINS_MD2.git"
+  },
+  "author": "Davis Medins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmlv91/WEB_AUT_DAVIS_MEDINS_MD2/issues"
+  },
+  "homepage": "https://github.com/dmlv91/WEB_AUT_DAVIS_MEDINS_MD2#readme",
+  "dependencies": {
+    "cypress": "^13.7.1"
+  }
+}
